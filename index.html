@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Electron boilerplate</title>
+		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" src="js/game.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Title Screen</h1>
+			</header>
+			<section class="main">
+				<button id="new-game">New Game</button>
+				<button id="generate-new-world">Generate New World</button>
+				<button id="load-character" onclick="document.getElementById('characterFile').click()">Load Character</button>
+				<input style="display: none" type="file" id="characterFile" onchange="loadCharacter()"></input>
+			</section>
+			<footer></footer>
+		</div>
+	</body>
+</html>

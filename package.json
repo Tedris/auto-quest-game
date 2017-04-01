@@ -1,0 +1,16 @@
+{
+  "name": "auto-quest-game",
+  "productName": "AutoQuestGame",
+  "version": "0.0.0",
+  "description": "My first-rate app",
+  "license": "MIT",
+  "repository": "Tedris/auto-quest-game",
+  "author": {
+    "name": "Tedris",
+    "email": "vanloone@gmail.com",
+    "url": "tedris.github.io"
+  },
+  "scripts": {
+    "start": "concurrently \"http-server\" \"start http://localhost:8080\""
+  }
+}

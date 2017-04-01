@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+		<link rel="stylesheet" href="css/game.css">
+    </head>
+    <script type="text/javascript" src="js/game.js"></script>
+    <div>
+        <div id="main-screen" class="main">
+            <div id="main-menu" class="main-menu">
+                <button id="quest-log" class="quest-log">Show Quest Log</button>
+                <button id="choose-zone" class="choose-zone">Pick Zone to Fight Monster</button>
+            </div>
+            <div id="quest-menu" class="quest-menu hide">
+            </div>
+            <div id="zone-menu" class="zone-menu hide">
+            </div>
+        </div>
+        <div id="side-bar" class="side-bar">
+            <div>Name: <span class="char-name"></span></div>
+            <div>Sex: <span class="char-sex"></span></div>
+            <div>Class: <span class="char-class"></span></div>
+            <div>Level: <span class="char-level"></span></div>
+            <div>Exp: <span class="char-exp"></span></div>
+            <div>Active Quest: <span class="char-quest"></span></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="bottom-console" class="console">
+            <div>Console</div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <script type="text/javascript">
+        loadCharacterAttributes();
+    </script>
+</html>

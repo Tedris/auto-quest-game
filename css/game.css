@@ -1,0 +1,28 @@
+.main {
+    float: left;
+    height: 75%;
+    width: 75%;
+    display: block;
+    background-color: white;
+}
+
+.console {
+    float: left;
+    height: 25%;
+    width: 100%;
+    display: block;
+    background-color: gray;
+}
+
+.side-bar {
+    float: right;
+    height: 75%;
+    width: 25%;
+    display: block;
+    background-color: green;
+}
+
+div.hide {
+    display: none
+}
+

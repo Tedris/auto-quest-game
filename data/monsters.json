@@ -1,0 +1,28 @@
+{
+    "tier0" : [
+        {
+            "id": "1",
+            "name" : "Fluffy Bunny",
+            "drops" : [
+                {
+                    "id" : "1",
+                    "dropChance" : "0.50"
+                },
+                {
+                    "id" : "2",
+                    "dropChance" : "0.99"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name" : "Small Wolf",
+            "drops" : [
+                {
+                    "id": "3",
+                    "dropChance" : "0.99"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "world" : {
+        "name" : "Demo World",
+        "maxLevel" : "10",
+        "zones" : [
+            {
+                "name" : "Trial fields",
+                "monsters" : [
+                    {
+                        "name" : "Fluffy Bunny",
+                        "tier" : "0",
+                        "drops" : [
+                            {
+                                "name" : "Carrot",
+                                "dropChance" : "0.50"
+                            },
+                            {
+                                "name" : "Fluffy Fur",
+                                "dropChance" : "0.99"
+                            }
+                        ]
+                    },
+                    {
+                        "name" : "Small Wolf",
+                        "tier" : "0",
+                        "drops" : [
+                            {
+                                "name" : "Wolf Fur",
+                                "dropChance" : "0.99"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "towns" : [
+            {
+                "name" : "Springfield",
+                "tier" : "0",
+                "npcs" : [
+                    {
+                        "name" : "Bill Billson",
+                        "job" : "Merchant"
+                    },
+                    {
+                        "name" : "Frank Furter",
+                        "job" : "Townie"
+                    }
+                ]
+            }
+        ]
+    }
+}

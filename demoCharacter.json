@@ -1,0 +1,34 @@
+{
+    "name" : "Demo Demos",
+    "sex" : "Apache Attack Helicopter",
+    "class" : "Paladin",
+    "level" : "1",
+    "exp" : "0",
+    "age" : "1",
+    "activeQuest" : "",
+    "stats" : {
+        "STR" : "18",
+        "DEX" : "12",
+        "VIT" : "16",
+        "CHA" : "18",
+        "LUK" : "0"
+    },
+    "equipment" : {
+        "RHand" : "Sword",
+        "LHand" : "Shield",
+        "Armor" : "Leather armor",
+        "Gloves" : "Leather gloves",
+        "Legs" : "Leather pants",
+        "Boots" : "Leather boots",
+        "Necklace" : "",
+        "RRing" : "",
+        "LRing" : "",
+        "Accessory" : ""
+    },
+    "storage" : {
+        "items" : [
+
+        ],
+        "gold" : "0"
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "name": "Carrot",
+        "description": "A vegetable associated with rabbits.  What's up, doc?"
+    },
+    {
+        "id": "2",
+        "name": "Fluffy Fur",
+        "description": "The fur of a cute rabbit, you monster."
+    },
+    {
+        "id": "3",
+        "name": "Wolf Fur",
+        "description": "A wolf's fur.  From a small wolf.  Why are you doing this?"
+    }
+]
