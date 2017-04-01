@@ -23,6 +23,16 @@
                     "dropChance" : "0.99"
                 }
             ]
+        },
+        {
+            "id":"3",
+            "name" : "Little Pig",
+            "drops" : [
+                {
+                    "id" : "4",
+                    "dropChance" : "0.50"
+                }
+            ]
         }
     ]
 }
