@@ -11,6 +11,9 @@
     "url": "tedris.github.io"
   },
   "scripts": {
-    "start": "concurrently \"http-server\" \"start http://localhost:8080\""
+    "start": "concurrently \"http-server\" \"xdg-open http://localhost:8080\""
+  },
+  "dependencies": {
+    "localforage": "^1.5.0"
   }
 }

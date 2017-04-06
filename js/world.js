@@ -52,6 +52,35 @@ function populateMonsters(zone, tier) {
     
 }
 
+function populateQuestsByMonsterTier(arrayOfMonsters, tier) {
+    var quests = [];
+    //for each monster, create a quest to get 5 of their drops
+    populateFiveDropQuests(arrayOfMonsters, quests, tier);
+    return quests; 
+}
+
+function populateFiveDropQuests(arrayOfMonsters, arrayOfQuests, tier) {
+    for (var i = 0; i<arrayOfMonsters.length-1; i++) {
+        var monster = arrayOfMonsters[i];
+        //get monster drops
+        for (var j = 0; j < monster.drops.length - 1; j++) {
+            var drop = monster.drops[j];
+            //get unused quest id 
+            var questId = arrayOfQuests.length;
+            var description = "This should be easy, just get me five " + items[drop.id];
+            //var exp = Math.floor(getCharacter().requiredExpToNextLevel / 4);
+            var exp = 250 * (tier + 1);
+            var quest = {
+                id: questId,
+                description: description,
+                exp: exp
+            };
+            arrayOfQuests.push(quest);
+        }
+
+    }
+}
+
 //initial random town names
 var townNames = [
     "Johnsonton",

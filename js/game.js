@@ -28,6 +28,10 @@ function saveToCharacterObject(jsonData) {
 function loadCharacterAttributes() {
     var character = getCharacter();
 
+    updateAttributes();
+}
+
+function updateAttributes() {
     updateAttribute('name', character.name);
     updateAttribute('sex', character.sex);
     updateAttribute('class', character.class);

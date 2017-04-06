@@ -5,32 +5,7 @@
         "zones" : [
             {
                 "name" : "Trial fields",
-                "monsters" : [
-                    {
-                        "name" : "Fluffy Bunny",
-                        "tier" : "0",
-                        "drops" : [
-                            {
-                                "name" : "Carrot",
-                                "dropChance" : "0.50"
-                            },
-                            {
-                                "name" : "Fluffy Fur",
-                                "dropChance" : "0.99"
-                            }
-                        ]
-                    },
-                    {
-                        "name" : "Small Wolf",
-                        "tier" : "0",
-                        "drops" : [
-                            {
-                                "name" : "Wolf Fur",
-                                "dropChance" : "0.99"
-                            }
-                        ]
-                    }
-                ]
+                "tier" : "0"
             }
         ],
         "towns" : [
@@ -39,7 +14,7 @@
                 "tier" : "0",
                 "npcs" : [
                     {
-                        "name" : "Bill Billson",
+                        "name" : "Stephen Merchant",
                         "job" : "Merchant"
                     },
                     {
