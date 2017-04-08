@@ -11,6 +11,8 @@ function createWorld(level) {
     var numberOfZones = level/10;
     var numberOfMonsters = level/5;
 
+    loadMonsterData();
+
     for (var i = 0; i < numberOfTowns; i++) {
         var town = {};
         //get random Town name from list of towns
@@ -48,18 +50,38 @@ function populateNpcs(town, tier) {
     
 }
 
+function loadMonsterData() {
+    var monsterData = 
+}
+
 function populateMonsters(zone, tier) {
     
 }
 
 function populateQuestsByMonsterTier(arrayOfMonsters, tier) {
     var quests = [];
-    //for each monster, create a quest to get 5 of their drops
-    populateFiveDropQuests(arrayOfMonsters, quests, tier);
+    //for each monster, create a quest to get 5 of their dropse
+    populateQuestsFromDrops(arrayOfMonsters, 
+        quests, 
+        tier,
+        "This should be easy, just get me five ",
+        250);
+
+    populateQuestsFromDrops(arrayOfMonsters,
+        quests,
+        tier,
+        "Want to prove yourself?  Get me ten ",
+        300);
+
+    populateQuestsFromDrops(arrayOfMonsters,
+        quests,
+        tier,
+        "I can't get enough!  Get me twenty ",
+        500);
     return quests; 
 }
 
-function populateFiveDropQuests(arrayOfMonsters, arrayOfQuests, tier) {
+function populateQuestsFromDrops(arrayOfMonsters, arrayOfQuests, tier, description, rate) {
     for (var i = 0; i<arrayOfMonsters.length-1; i++) {
         var monster = arrayOfMonsters[i];
         //get monster drops
@@ -67,9 +89,9 @@ function populateFiveDropQuests(arrayOfMonsters, arrayOfQuests, tier) {
             var drop = monster.drops[j];
             //get unused quest id 
             var questId = arrayOfQuests.length;
-            var description = "This should be easy, just get me five " + items[drop.id];
+            var description = description + items[drop.id];
             //var exp = Math.floor(getCharacter().requiredExpToNextLevel / 4);
-            var exp = 250 * (tier + 1);
+            var exp = rate * (tier + 1);
             var quest = {
                 id: questId,
                 description: description,
