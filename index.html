@@ -4,7 +4,9 @@
 		<meta charset="utf-8">
 		<title>Electron boilerplate</title>
 		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src="js/world.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -13,7 +15,7 @@
 			</header>
 			<section class="main">
 				<button id="new-game">New Game</button>
-				<button id="generate-new-world">Generate New World</button>
+				<button id="generate-new-world" onclick="createWorld(10);">Generate New World</button>
 				<button id="load-character" onclick="document.getElementById('characterFile').click()">Load Character</button>
 				<input style="display: none" type="file" id="characterFile" onchange="loadCharacter()"></input>
 			</section>

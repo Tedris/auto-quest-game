@@ -14,6 +14,7 @@
     "start": "concurrently \"http-server\" \"xdg-open http://localhost:8080\""
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "localforage": "^1.5.0"
   },
   "devDependencies": {
