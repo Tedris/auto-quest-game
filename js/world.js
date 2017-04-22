@@ -128,7 +128,7 @@ function populateQuestsFromDrops(arrayOfMonsters, arrayOfQuests, tier, descripti
             var drop = monster.drops[j];
             //get unused quest id 
             var questId = arrayOfQuests.length;
-            var description = description + items[drop.id];
+            var description = description + items[drop.id].name;
             //var exp = Math.floor(getCharacter().requiredExpToNextLevel / 4);
             var exp = rate * (tier + 1);
             var quest = {
