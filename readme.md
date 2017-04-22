@@ -11,8 +11,16 @@ $ npm install
 
 ### Run
 
+### Windows
+
 ```
-$ npm start
+$ npm run win-start
+```
+
+### Linux
+
+```
+$ npm run linux-start
 ```
 
 ## License
