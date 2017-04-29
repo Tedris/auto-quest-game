@@ -1,19 +1,25 @@
 <!doctype html>
 <html>
     <head>
-   		<script type="text/javascript" src="js/lib/jquery.min.js"></script>>
+   		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
         <script type="text/javascript" src="js/game.js"></script>
 		<link rel="stylesheet" href="css/game.css">
     </head>
     <div>
         <div id="main-screen" class="main">
-            <div id="main-menu" class="main-menu">
-                <button id="quest-log" class="quest-log">Show Quest Log</button>
-                <button id="choose-zone" class="choose-zone">Pick Zone to Fight Monster</button>
+            <div id="menu-buttons" class="menu-buttons">
+                <button class="back-to-main-menu" onclick="openMenu('main');">Main Menu</button>
+                <button id="quest-log" class="quest-log" onclick="openMenu('quest');">Show Quest Log</button>
+                <button id="choose-zone" class="choose-zone" onclick="openMenu('zone');">Pick Zone to Fight Monster</button>
             </div>
-            <div id="quest-menu" class="quest-menu hide">
+            <div name="menu-selection" id="main-menu" class="main-menu">
+                Main Menu
             </div>
-            <div id="zone-menu" class="zone-menu hide">
+            <div name="menu-selection" id="quest-menu" class="quest-menu hide">
+                Quest Log
+            </div>
+            <div name="menu-selection" id="zone-menu" class="zone-menu hide">
+                Zones
             </div>
         </div>
         <div id="side-bar" class="side-bar">

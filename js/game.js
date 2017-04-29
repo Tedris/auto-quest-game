@@ -28,10 +28,10 @@ function saveToCharacterObject(jsonData) {
 function loadCharacterAttributes() {
     var character = getCharacter();
 
-    updateAttributes();
+    updateAttributes(character);
 }
 
-function updateAttributes() {
+function updateAttributes(character) {
     updateAttribute('name', character.name);
     updateAttribute('sex', character.sex);
     updateAttribute('class', character.class);
@@ -44,4 +44,19 @@ function updateAttribute(type, attribute) {
     var className = ".char-" + type;
     var typeObject = document.querySelector(className);
     typeObject.innerHTML = attribute; 
+}
+
+function openMenu(menuName) {
+    var menus = document.getElementsByName('menu-selection');
+    $.each(menus, function(i, menu) {
+        if (menu.className.includes(menuName)) {
+            if (menu.classList.contains("hide")) {
+                menu.classList.toggle("hide");
+            }
+        } else {
+            if (!menu.classList.contains("hide")) {
+                menu.classList.toggle("hide");
+            }
+        }
+    });
 }
