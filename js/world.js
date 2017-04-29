@@ -121,19 +121,19 @@ function populateQuestsByMonsterTier(arrayOfMonsters, tier, items) {
 
 function populateQuestsFromDrops(arrayOfMonsters, arrayOfQuests, tier, description, rate, items) {
     var monstersByTier = arrayOfMonsters[tier];
-    for (var i = 0; i<monstersByTier.length-1; i++) {
+    for (var i = 0; i<monstersByTier.length; i++) {
         var monster = monstersByTier[i];
         //get monster drops
-        for (var j = 0; j < monster.drops.length - 1; j++) {
+        for (var j = 0; j < monster.drops.length; j++) {
             var drop = monster.drops[j];
             //get unused quest id 
             var questId = arrayOfQuests.length;
-            var description = description + items[drop.id];
+            var questDescription = description + items[drop.id].name;
             //var exp = Math.floor(getCharacter().requiredExpToNextLevel / 4);
             var exp = rate * (tier + 1);
             var quest = {
                 id: questId,
-                description: description,
+                description: questDescription,
                 exp: exp
             };
             arrayOfQuests.push(quest);
