@@ -7,20 +7,13 @@
 
 ```
 $ npm install
+$ npm install -g grunt-cli
 ```
 
 ### Run
 
-### Windows
-
 ```
-$ npm run win-start
-```
-
-### Linux
-
-```
-$ npm run linux-start
+$ grunt
 ```
 
 ## License

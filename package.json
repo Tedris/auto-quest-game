@@ -10,16 +10,13 @@
     "email": "vanloone@gmail.com",
     "url": "tedris.github.io"
   },
-  "scripts": {
-    "linux-start": "concurrently \"http-server\" \"xdg-open http://localhost:8080\"",
-    "win-start": "concurrently \"http-server\" \"start http://localhost:8080\""
-  },
   "dependencies": {
     "jquery": "^3.2.1",
     "localforage": "^1.5.0"
   },
   "devDependencies": {
-    "concurrently": "^3.4.0",
-    "http-server": "^0.9.0"
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0"
   }
 }
